@@ -298,18 +298,18 @@ a:focus-visible {
 	padding-bottom: 1.85vw;
 	will-change: transform, opacity;
 }
-/* 
-.panel__item-title span:first-child {
-	font-style: italic;
-	font-weight: 300;
-}
 
-.panel__item-title span:last-child {
-	font-weight: 700;
-	text-indent: 10vw;
-	display: block;
+/* .panel__item-subtitle span:first-child {
+	color: blue
+
 } */
 
+/* .panel__item-title span:last-child {
+	margin-right: 100px
+} */
+/* .external-link {
+	position: absolute;
+} */
 .panel__item-subtitle {
 	grid-area: subtitle;
 	justify-self: start;
@@ -728,3 +728,110 @@ ul {
     opacity: 1;
   }
 }
+
+
+/* button hover */
+.link-container {
+	margin-top: 10px;
+	text-decoration: none;
+	color: aquamarine;
+	font-family: sans-serif;
+	border: 3px solid aquamarine;
+	padding: 5px 10px;
+	position: relative;
+	transition: all 1s;
+	overflow: hidden;
+	position:absolute;
+  }
+  
+  .link-container:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: aquamarine;
+	z-index: -1;
+	transform: translateX(-100%);
+	transition: all 1s;
+  }
+  
+  .link-container:hover:before {
+	transform: translateX(0);
+  }
+  
+  .link-container:hover {
+	color: #351435;
+  }
+
+/* video popup */
+  .modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+	margin: 10% auto;
+	width: 60%;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+	animation-name: modalopen;
+	animation-duration: var(--modal-duration);
+  }
+  
+  .modal-header h2,
+  .modal-footer h3 {
+	margin: 0;
+  }
+  
+  .modal-header {
+	background: var(--modal-color);
+	padding: 15px;
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+  }
+  
+  .modal-body {
+	padding: 10px 20px;
+	background: #fff;
+  }
+  
+  .modal-footer {
+	background: var(--modal-color);
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+  }
+  
+  .close {
+	color: #ccc;
+	float: right;
+	font-size: 30px;
+	color: #fff;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  @keyframes modalopen {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
