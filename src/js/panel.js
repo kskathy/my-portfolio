@@ -28,7 +28,7 @@ export class Panel {
         const imgRect = imgWrap.getBoundingClientRect();
         // the second image will be in the center of the panel, while the first and third will be left and right aligned to the panel
         // const centeredVal = this.rect.width/2 - imgRect.width/2;
-        const centeredVal = this.rect.width/1 - imgRect.width/1;
+        const centeredVal = this.rect.width - imgRect.width;
         let tx = 0;
         switch (this.DOM.items.indexOf(imgWrap.parentNode)) {
             case 0: 
