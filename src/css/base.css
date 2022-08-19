@@ -763,9 +763,9 @@ ul {
 .link-container {
 	margin-top: 10px;
 	text-decoration: none;
-	color: aquamarine;
+	color: black;
 	font-family: sans-serif;
-	border: 3px solid aquamarine;
+	border: 2px solid black;
 	padding: 5px 10px;
 	position: relative;
 	transition: all 1s;
@@ -780,7 +780,7 @@ ul {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: aquamarine;
+	background-color: black;
 	z-index: -1;
 	transform: translateX(-100%);
 	transition: all 1s;
@@ -791,62 +791,51 @@ ul {
   }
   
   .link-container:hover {
-	color: #351435;
+	color: white;
   }
 
 /* video popup */
   .modal {
 	display: none;
 	position: fixed;
-	z-index: 1;
+	z-index: 5;
 	left: 0;
 	top: 0;
-	height: 100%;
+	height: 120%;
 	width: 100%;
 	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: var(--color-bg);
   }
   
+
+
+	@media screen and (max-width: 1170px) { 
+		.modal {
+			height: 160%;
+			width: 100%;
+		  }
+		}
+
+  
   .modal-content {
-	margin: 10% auto;
-	width: 60%;
-	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+	width: 100%;
 	animation-name: modalopen;
 	animation-duration: var(--modal-duration);
   }
   
-  .modal-header h2,
-  .modal-footer h3 {
-	margin: 0;
-  }
-  
   .modal-header {
-	background: var(--modal-color);
-	padding: 15px;
-	color: #fff;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	background: var(--color-bg);
   }
   
   .modal-body {
-	padding: 10px 20px;
-	background: #fff;
-  }
-  
-  .modal-footer {
-	background: var(--modal-color);
-	padding: 10px;
-	color: #fff;
-	text-align: center;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+	background: var(--color-bg);
   }
   
   .close {
-	color: #ccc;
+	color: black;
 	float: right;
 	font-size: 30px;
-	color: #fff;
+	color: black;
   }
   
   .close:hover,
