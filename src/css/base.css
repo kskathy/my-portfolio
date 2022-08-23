@@ -580,8 +580,10 @@ ul {
 	margin: 0;
 	padding: 0.5rem 0 0 3.5rem;
 	width: 55%;
-	font-size: 18px;
-	line-height: 1.5rem;
+	font-family: niveau-grotesk, sans-serif;
+    font-size: 1.3vw;
+    font-weight: 150;
+    line-height: 2vw;
    }
 
  
@@ -777,7 +779,7 @@ ul {
 	overflow: hidden;
 	position:absolute;
   }
-  
+
   .link-container:before {
 	content: '';
 	position: absolute;
@@ -952,6 +954,15 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 	border-spacing: 10px;
 	margin-top: 5%;
   }
+
+  .contact-colContainer {
+	display: table;
+	width: 40%;
+	margin: 0 auto;
+	border-spacing: 10px;
+	margin-top: 5%;
+	text-align: center;
+  }
   
   .column {
 	display: table-cell;
@@ -959,6 +970,15 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 	padding: 2%;
 	border: 5px solid white
   }
+
+  .contact-column {
+	text-align: center;
+	width: 50%;
+	padding: 2%;
+	border: 5px solid white
+	
+  }
+
 
   .skills-header {
 	font-family: niveau-grotesk, sans-serif; 
@@ -970,48 +990,6 @@ nav .start-contact, a:nth-child(5):hover~.animation {
   .skills-content {
 	  line-height: 1.5rem;
   }
-
-
-  /* .card {
-	color:black;
-	position: relative;
-	box-shadow: 10px;
-	cursor: pointer;
-	border-radius: 10px;
-  }
-
-  .card:after,
-  .card:before {      
-	border-radius: 5px;
-	bottom: 0;
-	content: "";
-	left: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-	transition: transform 0.3s ease-in-out;
-  }
-
-  .card:before {
-	border-left: 3px solid black;
-	border-right: 3px solid black;
-	transform: scaleY(0);
-  }
-
-  .card:after {
-	border-bottom: 3px solid black;
-	border-top: 3px solid black;
-	transform: scaleX(0);
-  }
-
-  .card:hover:before {
-	transform: scaleY(1);
-  }
-
-  .card:hover:after {
-	transform: scaleX(1);
-  } */
-
   
   @media only screen and (max-width: 720px) {
 	.colContainer {

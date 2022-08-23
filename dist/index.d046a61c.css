@@ -522,8 +522,10 @@ ul li:nth-child(3) a:before {
   width: 55%;
   margin: 0;
   padding: .5rem 0 0 3.5rem;
-  font-size: 18px;
-  line-height: 1.5rem;
+  font-family: niveau-grotesk, sans-serif;
+  font-size: 1.3vw;
+  font-weight: 150;
+  line-height: 2vw;
 }
 
 .fadeup {
@@ -840,11 +842,26 @@ nav .start-contact, a:nth-child(5):hover ~ .animation {
   display: table;
 }
 
+.contact-colContainer {
+  width: 40%;
+  border-spacing: 10px;
+  text-align: center;
+  margin: 5% auto 0;
+  display: table;
+}
+
 .column {
   width: 33.33%;
   border: 5px solid #fff;
   padding: 2%;
   display: table-cell;
+}
+
+.contact-column {
+  text-align: center;
+  width: 50%;
+  border: 5px solid #fff;
+  padding: 2%;
 }
 
 .skills-header {
