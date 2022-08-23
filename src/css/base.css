@@ -146,6 +146,11 @@ a:focus-visible {
 	max-width: 1300px;
 }
 
+.icon-content {
+	margin: 2vh auto 5vh;
+	max-width: 1300px;
+}
+
 
 .content--sponsor {
 	position: relative;
@@ -437,8 +442,8 @@ a:focus-visible {
 		/* margin: 0 auto 20vh; */
 		/* padding: 1rem 4rem;
 		border-radius: 0 0 8px 8px; */
-		margin-left: 4.5rem;
-		position: absolute;
+		margin-left: 0.5rem;
+		/* position: absolute; */
 	}
 
 	.page--footer {
