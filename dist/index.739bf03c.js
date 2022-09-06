@@ -5329,7 +5329,7 @@ class Cursor {
         window.addEventListener("mousemove", this.onMouseMoveEv);
     }
     enter() {
-        this.renderedStyles["scale"].current = 2.5;
+        this.renderedStyles["scale"].current = 3.5;
         this.renderedStyles["opacity"].current = 0.5;
     }
     leave() {
