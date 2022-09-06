@@ -72,7 +72,7 @@ body {
 a {
   color: var(--color-link);
   outline: none;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
@@ -843,9 +843,8 @@ nav .start-contact, a:nth-child(5):hover ~ .animation {
 }
 
 .contact-colContainer {
-  width: 40%;
+  width: 50%;
   border-spacing: 10px;
-  text-align: center;
   margin: 5% auto 0;
   display: table;
 }
@@ -857,17 +856,11 @@ nav .start-contact, a:nth-child(5):hover ~ .animation {
   display: table-cell;
 }
 
-.contact-column {
-  text-align: center;
-  width: 50%;
-  border: 5px solid #fff;
-  padding: 2%;
-}
-
 .skills-header {
   text-align: center;
   padding: 5%;
   font-family: niveau-grotesk, sans-serif;
+  height: 140px !important;
   font-size: 36px !important;
 }
 
@@ -885,6 +878,66 @@ nav .start-contact, a:nth-child(5):hover ~ .animation {
     margin: 10px auto;
     display: block;
   }
+}
+
+.js-trigger-overlay {
+  color: #fff;
+  background-color: #009ac9;
+  border: 1px solid #0000;
+  border-radius: 3px;
+  margin-top: 10px;
+  padding: .3rem .8rem;
+  font-family: niveau-grotesk, sans-serif;
+  font-size: 18px;
+  transition: all .3s ease-in-out;
+  position: absolute;
+  overflow: hidden;
+}
+
+.js-trigger-overlay:hover {
+  color: #009ac9;
+  background-color: #fff;
+  border-color: #009ac9;
+}
+
+.project-btn {
+  display: flex;
+  position: absolute;
+}
+
+.demo-btn {
+  color: #fff;
+  background-color: #009ac9;
+  border: #0000;
+  border-radius: 3px;
+  flex-grow: 1;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: niveau-grotesk, sans-serif;
+  font-size: 16px;
+  transition: all .3s;
+}
+
+.demo-btn:hover {
+  opacity: .75;
+}
+
+.demo-btn2 {
+  color: #fff;
+  width: 20%;
+  background-color: #009ac9;
+  border: #0000;
+  border-radius: 3px;
+  flex-grow: 1;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: niveau-grotesk, sans-serif;
+  font-size: 16px;
+  transition: all .3s;
+}
+
+.demo-btn2:hover {
+  opacity: .75;
 }
 
 .splitting .word, .splitting .char {
