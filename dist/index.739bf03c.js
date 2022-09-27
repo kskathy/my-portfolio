@@ -5347,6 +5347,6 @@ class Cursor {
 }
 exports.default = Cursor;
 
-},{"gsap":"fPSuC","./utils":"72Dku","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["cVgJb","ebWYT"], "ebWYT", "parcelRequire5fba")
+},{"gsap":"fPSuC","./utils":"72Dku","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["cVgJb","ebWYT"], "ebWYT", "parcelRequire94c2")
 
 //# sourceMappingURL=index.739bf03c.js.map

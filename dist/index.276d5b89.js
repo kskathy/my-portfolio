@@ -617,6 +617,6 @@ window.addEventListener("scroll", ()=>{
     handleScrollAnimation();
 });
 
-},{}]},["8uHnk","17m4S"], "17m4S", "parcelRequire5fba")
+},{}]},["8uHnk","17m4S"], "17m4S", "parcelRequire94c2")
 
 //# sourceMappingURL=index.276d5b89.js.map
