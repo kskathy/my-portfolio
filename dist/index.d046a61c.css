@@ -559,7 +559,6 @@ ul li:nth-child(3) a:before {
 }
 
 body:not(.no-js) .fadeup {
-  opacity: 0;
   transition: all .4s ease-out;
   transform: translateY(40px);
 }

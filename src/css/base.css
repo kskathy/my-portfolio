@@ -629,10 +629,11 @@ ul {
 
   }
   body:not(.no-js) .fadeup {
-	opacity: 0;
+	/* opacity: 0; */
 	transition: 0.4s ease-out;
 	transform: translateY(40px);
   }
+
   
   body:not(.no-js) .fading-up {
 	opacity: 1;
